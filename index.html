@@ -118,9 +118,11 @@
     </header>
 
     <section class="hero">
-      <img class="desktop" src="images/Hero_Desktop.webp" alt="Hero Desktop" width="1920" height="893" />
-      <img class="mobile" src="images/Hero_Mobile.webp" alt="Hero Mobile" width="600" height="600" />
-      <img class="tablet" src="images/Hero_Tablet.webp" alt="Hero Tablet" width="1008" height="809" />
+      <picture>
+        <source srcset="images/Hero_Desktop.webp" media="(min-width: 1024px)" type="image/webp" />
+        <source srcset="images/Hero_Tablet.webp" media="(min-width: 768px)" type="image/webp" />
+        <img src="images/Hero_Mobile.webp" alt="Hero Mobile" type="image/webp" />
+      </picture>
 
       <div class="hero-content">
         <div class="container">
