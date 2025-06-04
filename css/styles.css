@@ -17,6 +17,11 @@ body {
     
 }
 
+.main_banner {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
 
 ul {
     margin: 0;
@@ -608,6 +613,10 @@ footer .copyright-text {
 
 /* Start of Design for Mobile Phones */
 @media screen and (max-width: 576px) {
+
+    .main_banner {
+        aspect-ratio: 1 / 1;
+    }
 
     header .logo {
         font-size: 18px;
